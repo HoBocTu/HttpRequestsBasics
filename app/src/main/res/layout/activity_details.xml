@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="ru.samsung.httprequestsbasics.controller.DetailsActivity"
+  android:orientation="vertical"
+  android:layout_gravity="center_vertical"
+  >
+
+  <include
+    layout="@layout/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  </include>
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/foodDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    android:elevation="2dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/button_background"
+    android:foreground="@drawable/button_foreground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/detailsID"
+          style="@style/standartTextView"
+          android:text="ID"
+          />
+
+      <TextView
+          android:id="@+id/detailsName"
+          style="@style/standartTextView"
+          android:text="NAME"
+          />
+      <TextView
+          android:id="@+id/detailsUsername"
+          style="@style/standartTextView"
+          android:text="USERNAME"
+          />
+      <TextView
+          android:id="@+id/detailsEmail"
+          style="@style/standartTextView"
+          android:text="EMAIL"
+          />
+      <TextView
+          android:id="@+id/detailsAddress"
+          style="@style/standartTextView"
+          android:text="ADDRESS"
+          />
+      <TextView
+          android:id="@+id/detailsPhone"
+          style="@style/standartTextView"
+          android:text="PHONE"
+          />
+      <TextView
+          android:id="@+id/detailsWebsite"
+          style="@style/standartTextView"
+          android:text="WEBSITE"
+          />
+        <TextView
+            android:id="@+id/detasilsCompany"
+            style="@style/standartTextView"
+            android:text="COMPANY"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+</LinearLayout>
